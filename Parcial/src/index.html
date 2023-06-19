@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div><label class="form-label">Referencia</label><input type="number " id="idce" class="form-control"></div>
+            <button type="button" id="Buscar" class="btn-primary">Buscar</button>
+            <button type="button" id="Eliminarid" class="btn-primary">Eliminar</button>
+            <button type="button" id="Cargar" class="btn-primary">Cargar informacion</button>
+            
+            </div>
+            
+    <form id="Restart" class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Referencia</label>
+          <input type="number" class="form-control" id="referencia" value="" required>
+          
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" value="" required>
+          
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Categoria</label>
+          <input type="text" class="form-control" id="categoria" required>
+          
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Precio unitario</label>
+          <input type="number" class="form-control" id="preciounitario" required>
+          
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Cantidad</label>
+          <input type="text" class="form-control" id="cantidad" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Total</label>
+          <input type="text" class="form-control" id="total" required>
+          
+        </div>
+        
+                                                           <!--Añadir-->
+        <div class="col-14">
+          <button type="button" id="Añadir" class="btn-primary">Añadir</button>
+          <button type="button" id="Actualizar" class="btn-primary">Actualizar</button>
+          <button type="button" id="TotalMayor" class="btn-primary">Producto de mayor valor</button>
+        </div>
+        
+
+                                                           <!--Listar-->
+        <div class="col-12">
+          <div>
+          <button type="button" id="Listar" class="btn-primary">Listar</button>
+           </div>
+        </div>
+        <div class="col-5">
+          <table class="table table-dark table-striped" id="tabla">
+           <thead>
+            
+                <th>Referencia</th>
+                <th>Nombre</th>
+                <th>Categoria</th>    
+                <th>Precio_unitario</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+            
+        </thead>
+          </table>
+        </div>
+         
+
+                                                           <!--Buscar-->
+        <div class="col-13">
+          
+          <div class="col-5 m-5">
+            
+
+        </div>
+        
+      </form>
+      <br>
+      
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    
+
+</body>
+
+</html>
